@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Alex Morgan, a senior IT programmer building resilient digital products.">
+  <title>Alex Morgan | Product-minded IT programmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#top" aria-label="Alex Morgan home">
+        <span class="brand-mark">AM</span>
+        <span>alex<span class="brand-dot">.</span>dev</span>
+      </a>
+
+      <div class="sidebar-label">Workspace</div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a class="nav-item active" href="#overview"><span class="nav-icon">+</span> Overview</a>
+        <a class="nav-item" href="#projects"><span class="nav-icon">/</span> Projects</a>
+        <a class="nav-item" href="#stack"><span class="nav-icon">{ }</span> Stack</a>
+        <a class="nav-item" href="#about"><span class="nav-icon">i</span> About me</a>
+      </nav>
+
+      <div class="sidebar-label">Connect</div>
+      <nav class="main-nav" aria-label="Social navigation">
+        <a class="nav-item" href="mailto:hello@alexmorgan.dev"><span class="nav-icon">@</span> Email me</a>
+        <a class="nav-item" href="https://github.com" target="_blank" rel="noreferrer"><span class="nav-icon">GH</span> GitHub <span class="external">↗</span></a>
+        <a class="nav-item" href="https://linkedin.com" target="_blank" rel="noreferrer"><span class="nav-icon">in</span> LinkedIn <span class="external">↗</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="mini-avatar">AM</div>
+        <div>
+          <strong>Alex Morgan</strong>
+          <span>Senior IT programmer</span>
+        </div>
+        <span class="status-dot"></span>
+      </div>
+    </aside>
+
+    <main class="main-content" id="top">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong>Overview</strong></div>
+        <div class="topbar-actions">
+          <span class="live-badge"><span class="status-dot"></span> Available for select projects</span>
+          <button class="icon-button" type="button" aria-label="Toggle theme" id="themeToggle">◐</button>
+          <a class="contact-button" href="mailto:hello@alexmorgan.dev">Start a conversation <span>↗</span></a>
+        </div>
+      </header>
+
+      <section class="content-wrap" id="overview">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="pulse"></span> Product-minded engineering</div>
+            <h1>Building systems<br><em>people trust.</em></h1>
+            <p class="hero-intro">I am Alex, an IT programmer with 6 years of experience turning complex operations into clear, dependable software.</p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#projects">Explore my work <span>↓</span></a>
+              <a class="text-button" href="mailto:hello@alexmorgan.dev">Let's talk <span>↗</span></a>
+            </div>
+            <div class="hero-meta">
+              <div><span class="meta-label">Based in</span><strong>Portland, OR</strong></div>
+              <div><span class="meta-label">Timezone</span><strong>UTC - 08:00</strong></div>
+              <div><span class="meta-label">Experience</span><strong>06 years</strong></div>
+            </div>
+          </div>
+          <div class="profile-panel reveal reveal-delay">
+            <div class="panel-topline"><span>PROFILE / 001</span><span class="panel-menu">•••</span></div>
+            <div class="profile-image-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85" alt="Alex Morgan smiling" class="profile-image">
+              <span class="image-tag">01 / 04</span>
+            </div>
+            <div class="profile-caption"><span>Alex Morgan</span><span>IT / SYSTEMS</span></div>
+          </div>
+        </div>
+
+        <div class="section-heading" id="projects">
+          <div><span class="section-kicker">Selected output</span><h2>Things I have shipped</h2></div>
+          <div class="filter-tabs" role="tablist" aria-label="Project categories">
+            <button class="filter-tab active" data-filter="all" type="button">All work</button>
+            <button class="filter-tab" data-filter="platform" type="button">Platforms</button>
+            <button class="filter-tab" data-filter="systems" type="button">Systems</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured-project" data-category="platform">
+            <div class="project-visual visual-coral"><span class="project-number">01</span><div class="visual-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="chart-row"><b>84.2%</b><span>+12.4%</span></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+            <div class="project-info"><div><span class="project-type">Operations platform</span><h3>Northstar Console</h3></div><a class="round-arrow" href="#contact" aria-label="View Northstar Console">↗</a></div>
+            <p>A calm, real-time command center for distributed logistics teams.</p>
+            <div class="tag-row"><span>React</span><span>Node.js</span><span>Postgres</span></div>
+          </article>
+          <article class="project-card" data-category="systems">
+            <div class="project-visual visual-blue"><span class="project-number">02</span><div class="terminal-window"><span>$ deploy --production</span><span class="terminal-success">✓ completed in 42s</span><span>$ monitoring --live</span><span class="terminal-dim">latency: 28ms / uptime: 99.99%</span></div></div>
+            <div class="project-info"><div><span class="project-type">Infrastructure</span><h3>Signal Relay</h3></div><a class="round-arrow" href="#contact" aria-label="View Signal Relay">↗</a></div>
+            <p>Event-driven infrastructure that makes critical data feel instant.</p>
+            <div class="tag-row"><span>Go</span><span>AWS</span><span>Terraform</span></div>
+          </article>
+          <article class="project-card" data-category="platform">
+            <div class="project-visual visual-lime"><span class="project-number">03</span><div class="phone-mock"><span>INBOX</span><strong>4,281</strong><small>messages processed</small><div class="phone-line"></div><div class="phone-line short"></div></div></div>
+            <div class="project-info"><div><span class="project-type">Internal tooling</span><h3>Relay Inbox</h3></div><a class="round-arrow" href="#contact" aria-label="View Relay Inbox">↗</a></div>
+            <p>A smarter triage workflow that gave a support team its time back.</p>
+            <div class="tag-row"><span>TypeScript</span><span>GraphQL</span><span>Redis</span></div>
+          </article>
+        </div>
+
+        <section class="lower-grid" id="stack">
+          <div class="stack-panel">
+            <div class="section-kicker">The toolkit</div><h2>Tools for the<br><em>real world.</em></h2>
+            <div class="skill-list">
+              <div class="skill-row"><span>Frontend systems</span><span>React / Next.js / TypeScript</span><b>90%</b></div>
+              <div class="skill-row"><span>Backend architecture</span><span>Node / Go / Python</span><b>88%</b></div>
+              <div class="skill-row"><span>Cloud & infrastructure</span><span>AWS / Docker / CI/CD</span><b>82%</b></div>
+            </div>
+          </div>
+          <div class="metrics-panel" id="about">
+            <div class="section-kicker">By the numbers</div>
+            <div class="metric"><strong>06</strong><span>years making<br>software useful</span></div>
+            <div class="metric"><strong>24</strong><span>projects shipped<br>with good teams</span></div>
+            <div class="metric"><strong>99.9<span>%</span></strong><span>uptime on systems<br>I help operate</span></div>
+          </div>
+        </section>
+
+        <section class="contact-panel" id="contact">
+          <div><span class="section-kicker">Have a knotty problem?</span><h2>Let's make it<br><em>make sense.</em></h2></div>
+          <a class="contact-circle" href="mailto:hello@alexmorgan.dev" aria-label="Email Alex Morgan">Get in touch <span>↗</span></a>
+        </section>
+
+        <footer><span>© 2026 Alex Morgan</span><span>Built with care & good questions</span><a href="#top">Back to top ↑</a></footer>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
