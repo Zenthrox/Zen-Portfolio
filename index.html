@@ -17,6 +17,7 @@
         <span class="brand-mark">ZO</span>
         <span>zenthrox<span class="brand-dot">.</span>dev</span>
       </a>
+      <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="Open navigation" aria-expanded="false">MENU</button>
 
       <div class="sidebar-label">Workspace</div>
       <nav class="main-nav" aria-label="Primary navigation">
@@ -89,19 +90,19 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card featured-project" data-category="platform">
+          <article class="project-card featured-project" data-category="platform" data-project="northstar">
             <div class="project-visual visual-coral"><span class="project-number">01</span><div class="visual-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="chart-row"><b>84.2%</b><span>+12.4%</span></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
             <div class="project-info"><div><span class="project-type">Operations platform</span><h3>Northstar Console</h3></div><a class="round-arrow" href="#contact" aria-label="View Northstar Console">↗</a></div>
             <p>A calm, real-time command center for distributed logistics teams.</p>
             <div class="tag-row"><span>React</span><span>Node.js</span><span>Postgres</span></div>
           </article>
-          <article class="project-card" data-category="systems">
+          <article class="project-card" data-category="systems" data-project="signal">
             <div class="project-visual visual-blue"><span class="project-number">02</span><div class="terminal-window"><span>$ deploy --production</span><span class="terminal-success">✓ completed in 42s</span><span>$ monitoring --live</span><span class="terminal-dim">latency: 28ms / uptime: 99.99%</span></div></div>
             <div class="project-info"><div><span class="project-type">Infrastructure</span><h3>Signal Relay</h3></div><a class="round-arrow" href="#contact" aria-label="View Signal Relay">↗</a></div>
             <p>Event-driven infrastructure that makes critical data feel instant.</p>
             <div class="tag-row"><span>Go</span><span>AWS</span><span>Terraform</span></div>
           </article>
-          <article class="project-card" data-category="platform">
+          <article class="project-card" data-category="platform" data-project="relay">
             <div class="project-visual visual-lime"><span class="project-number">03</span><div class="phone-mock"><span>INBOX</span><strong>4,281</strong><small>messages processed</small><div class="phone-line"></div><div class="phone-line short"></div></div></div>
             <div class="project-info"><div><span class="project-type">Internal tooling</span><h3>Relay Inbox</h3></div><a class="round-arrow" href="#contact" aria-label="View Relay Inbox">↗</a></div>
             <p>A smarter triage workflow that gave a support team its time back.</p>
@@ -134,6 +135,20 @@
         <footer><span>© 2026 Zenthrox Orinthal</span><span>Built with care & good questions</span><a href="#top">Back to top ↑</a></footer>
       </section>
     </main>
+  </div>
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close project details">×</button>
+      <span class="section-kicker" id="modalType">Case study</span>
+      <h2 id="modalTitle">Project title</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-detail-grid">
+        <div><span>Role</span><strong id="modalRole"></strong></div>
+        <div><span>Outcome</span><strong id="modalOutcome"></strong></div>
+      </div>
+      <div class="tag-row" id="modalTags"></div>
+      <a class="primary-button" href="mailto:hello@zenthrox.dev">Discuss a similar project <span>↗</span></a>
+    </section>
   </div>
   <script src="script.js"></script>
 </body>
