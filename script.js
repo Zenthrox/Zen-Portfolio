@@ -29,6 +29,14 @@ const projectDetails = {
     role: 'Product engineer',
     outcome: '12 hrs saved / week',
     tags: ['TypeScript', 'GraphQL', 'Redis']
+  },
+  stusil: {
+    type: 'Web platform / Case study 04',
+    title: 'stusil.online',
+    description: 'I helped build and shape the Stusil online presence with a cleaner web experience, improved content flow, and a more polished brand presence for users and stakeholders.',
+    role: 'Web developer',
+    outcome: 'Stronger digital presence',
+    tags: ['Frontend', 'Web Design', 'Brand UI']
   }
 };
 
